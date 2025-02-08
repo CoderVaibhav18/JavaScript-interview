@@ -10,9 +10,9 @@ let data = [1,2,3,4,5];
 //   }
 // }, 1000)
 let p = 1;
-
+let timer;
 for(let i = data.length - 1; i >= 0; i--){
-  setTimeout(() => {
+  timer = setTimeout(() => {
     console.log(data[i]);
   }, p * 1000)
   p++
